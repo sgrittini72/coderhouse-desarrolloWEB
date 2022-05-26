@@ -1,0 +1,420 @@
+* {
+    Margin: 0;
+    padding: 0;
+}
+
+html {
+    border: 6px solid #00080e;
+    min-height: 100%;
+
+}
+
+h1, .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+
+body {
+    background-color: rgb(33, 37, 41);
+    color: rgb(224, 217, 217);
+    background-image: url("img/191010151958-bw-dubai-twins.jpg");
+    /*position: relative;*/
+    /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+
+    background-position: center center;
+
+    /* Para que la imagen de fondo no se repita */
+
+    background-repeat: no-repeat;
+
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+    background-attachment: fixed;
+
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+    background-size: cover;
+
+    /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+
+    background-color: rgb(33, 37, 41);
+
+}
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+  }
+
+  table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    border: solid;
+  }
+  table td{
+      border: solid;
+      border-color: #373b3e;
+  }
+  table th{
+    border: solid;
+    border-color: #373b3e;
+}
+
+
+.table-dark {
+    --bs-table-bg: #212529;
+    --bs-table-striped-bg: #2c3034;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #373b3e;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #323539;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: #373b3e;
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--bs-table-striped-color);
+  }
+  .table-bordered > :not(caption) > * {
+    border-width: 1px 0;
+  }
+.form-control:focus {
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+    background-color: rgb(33, 37, 41);
+    color: rgb(224, 217, 217);
+}
+
+
+.form-control {
+    border-color: rgb(63, 62, 62);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 51, 51, 0.6);
+
+}
+
+.divIconLogo {
+    width: 80%;
+    
+    float: left;
+}
+
+.divIconFlags {
+    margin-left: 40;
+    width: 20%;
+    float: rigth;
+}
+
+
+.divLogo {
+    width: 40%;
+   
+}
+
+
+.linea1Logo {
+    text-align: left;
+    font-size: 200%;
+    max-width: 200%;
+    min-width: 10%;
+
+}
+
+.linea2Logo {
+    text-align: left;
+
+}
+.flex-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flex-logo div{
+    margin: 5px;
+}
+
+.div-nav-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+
+}
+.div-nav-container div{
+    display: flex ;
+
+    justify-items: start;
+}
+
+.div-nav-container div a{
+    text-decoration:none;
+    color: white;
+}
+
+.divForm {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+
+}
+.divForm div{
+    display:flex;
+}
+.divFormReserva{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+
+.divFormContacto{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+
+
+label{
+   display: inline-block;
+   width: 200px;
+   
+    
+  }
+
+input{
+    width: 300px;
+    height: 40px;
+    background: linear-gradient(to bottom right, black,darkgray);
+    border-color: #00080e;
+    
+    color: white;
+   
+    margin-top: 20px;
+}
+.button{
+    width: 150px;
+    height: 40px;
+    background-image: linear-gradient(to left, black,darkgray);
+    border-color: darkgray;
+   
+
+}
+.divRedes {
+    /*las imágenes usadas tienen width de 48px*/
+
+    width: 80%;
+    margin-bottom: 2em;
+    text-align: right;
+}
+
+
+.divMapaUbicacion {
+    text-align: left;
+}
+
+.inputStyle {
+    background-color: transparent;
+    /* rgb(33, 37, 41);*/
+    color: rgb(224, 217, 217);
+    margin-top: 20px;
+
+}
+
+.pDireciion {
+    width: 80%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.borderColorButton {
+    border-color: rgb(78, 68, 13);
+}
+
+.pHistoria {
+
+    font-size: large;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.colorInmputletra {
+    color: white;
+}
+
+.iframeYouTube{
+    width: 727px ;
+    height: 409px;
+    
+}
+
+
+/* PARA jugar con GRID*/
+.grupoImagenes{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 10px ;
+    padding: 5px;
+    color: #00080e;
+    border: 2px solid;
+    text-align: center;
+   
+}
+
+.grupoImagenes >*{
+    display:flex;
+    justify-content: center;
+    text-justify: center;
+    justify-items: start;
+    width: 150px;
+    height: 200px;
+       
+}
+.foto_1{
+   
+   
+    background: linear-gradient(to bottom right,yellow ,rgb(124, 124, 51) );
+}
+
+
+.foto_2{
+
+    background: linear-gradient(to bottom right,aqua,rgb(136, 189, 189) );
+}
+
+
+ 
+
+.foto_3{
+
+    background: linear-gradient(to bottom right,blueviolet,rgb(148, 118, 177) );
+   
+}
+.foto_4{
+  
+    background: linear-gradient(to bottom right,tomato,rgb(197, 145, 136));
+    
+}
+.foto_5{
+    background: linear-gradient(to bottom right,brown,rgb(24, 23, 23));
+   
+
+
+   
+}
+
+.foto_6{
+
+    background: linear-gradient(to bottom right,tan,rgb(141, 124, 102));
+    
+}
+/* ANIMACIONES PARA LA ENTREGA*/
+
+.foto_1:hover{
+    padding: 100px;
+    transform: skewZ(100deg);
+}
+.foto_2:hover {
+    transition: all 2s;       
+    height: 200px; width: 200px;padding: 20px;
+  
+
+ }
+
+ .foto_3:hover {
+    transform: skew(20deg,10deg);
+
+ }
+
+ .foto_4:hover {
+    background: linear-gradient(to bottom right,blue,rgb(24, 23, 23));
+    transition: height 2s, width 1s;   
+    width: 187px;
+    height: 250px;
+    
+   
+}
+ 
+.foto_5:hover {
+    transition: height 2s, width 1s;   
+    width: 187px;
+    height: 250px;
+   
+}
+
+@media all and (max-width: 991px) {
+    .grupoImagenes{
+        grid-template-columns: auto auto auto;
+     
+       
+    }
+    
+ 
+    .grupoImagenes >*{
+        
+        /*justify-items: flex-start;*/
+        justify-content: space-between;
+        width: 60px;
+        height: 100px;
+    }
+
+    .logoEmiratos{
+        display: none;
+
+    }
+    .linea1Logo{
+        font-size: 120%;
+
+    }
+    .linea2Logo{
+        display:none;
+    }
+    .div-nav-container{
+        
+        grid-template-columns: auto ;
+    }
+    .divForm {
+       
+        grid-template-columns:  auto;
+    
+    
+    }
+    .divFormReserva{
+        grid-template-columns: auto;
+    
+    } 
+    .divFormContacto{
+       
+        grid-template-columns: auto;
+    
+    }
+    .iframeYouTube{
+        width: 200px ;
+        height: 109px;
+        
+    }
+    
+    /* ANIMACIONES PARA LA ENTREGA*/
+
+    .foto_1:hover{
+    padding: 10px;
+    transform: skewZ(60deg);
+}
+
+    .foto_2:hover {
+        transition: all 2s;       
+        height: 100px; width: 100px;padding: 0px;
+     
+    
+     }
+
+}
