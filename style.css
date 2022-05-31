@@ -256,116 +256,15 @@ input{
     height: 409px;
     
 }
-
-
-/* PARA jugar con GRID*/
-.grupoImagenes{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    margin: 10px ;
-    padding: 5px;
-    color: #00080e;
-    border: 2px solid;
-    text-align: center;
+.galeria{
+    width: 50%;
    
 }
 
-.grupoImagenes >*{
-    display:flex;
-    justify-content: center;
-    text-justify: center;
-    justify-items: start;
-    width: 150px;
-    height: 200px;
-       
-}
-.foto_1{
-   
-   
-    background: linear-gradient(to bottom right,yellow ,rgb(124, 124, 51) );
-}
 
-
-.foto_2{
-
-    background: linear-gradient(to bottom right,aqua,rgb(136, 189, 189) );
-}
-
-
- 
-
-.foto_3{
-
-    background: linear-gradient(to bottom right,blueviolet,rgb(148, 118, 177) );
-   
-}
-.foto_4{
-  
-    background: linear-gradient(to bottom right,tomato,rgb(197, 145, 136));
-    
-}
-.foto_5{
-    background: linear-gradient(to bottom right,brown,rgb(24, 23, 23));
-   
-
-
-   
-}
-
-.foto_6{
-
-    background: linear-gradient(to bottom right,tan,rgb(141, 124, 102));
-    
-}
-/* ANIMACIONES PARA LA ENTREGA*/
-
-.foto_1:hover{
-    padding: 100px;
-    transform: skewZ(100deg);
-}
-.foto_2:hover {
-    transition: all 2s;       
-    height: 200px; width: 200px;padding: 20px;
-  
-
- }
-
- .foto_3:hover {
-    transform: skew(20deg,10deg);
-
- }
-
- .foto_4:hover {
-    background: linear-gradient(to bottom right,blue,rgb(24, 23, 23));
-    transition: height 2s, width 1s;   
-    width: 187px;
-    height: 250px;
-    
-   
-}
- 
-.foto_5:hover {
-    transition: height 2s, width 1s;   
-    width: 187px;
-    height: 250px;
-   
-}
 
 @media all and (max-width: 991px) {
-    .grupoImagenes{
-        grid-template-columns: auto auto auto;
-     
-       
-    }
-    
  
-    .grupoImagenes >*{
-        
-        /*justify-items: flex-start;*/
-        justify-content: space-between;
-        width: 60px;
-        height: 100px;
-    }
 
     .logoEmiratos{
         display: none;
@@ -403,18 +302,8 @@ input{
         
     }
     
-    /* ANIMACIONES PARA LA ENTREGA*/
+   }
 
-    .foto_1:hover{
-    padding: 10px;
-    transform: skewZ(60deg);
-}
-
-    .foto_2:hover {
-        transition: all 2s;       
-        height: 100px; width: 100px;padding: 0px;
-     
-    
-     }
+   
 
 }

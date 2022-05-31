@@ -7,7 +7,7 @@
 	<link rel="icon" href="./icon/icons8-hospital-2-50.png">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-	<title>Index</title>
+	<title>Reservas</title>
 </head>
 
 <body>
@@ -70,44 +70,53 @@
 			</div>
 		</nav>
 	</header>
-	<main>
+	<div class="divForm">
 
-		<br>
-		<br>
 		<section>
-			<div>
+			<article>
+				<h2>Resevas</h2>
+
 				<form action="#">
-					<div class="divForm ">
+					<label for="email">Nombre:
+						<input class="inputStyle" type="text" required>
+					</label>
+					<br>
+					<label for="email">Apellido:
+						<input class="inputStyle" type="text" required>
+					</label>
+					<br>
+					<label for="email">Direccion de correo:
+						<input class="inputStyle" type="email" placeholder="xxx@gmail.com" name="email" required>
+					</label>
+					<br>
+					<label for="telefono">Telefono de contacto:
+						<input class="inputStyle" type="number" placeholder="tel. contacto" name="telefono" required>
+					</label>
+					<br>
+					<h3>Periodo</h3>
+					<input class="inputStyle" type="date" name="fechaDesde" id="">
 
+					<input class="inputStyle" type="date" name="fechaHasta" id="">
+					<br>
+					<input class="inputStyle" type="number" name="cantAdultos" placeholder="cant. adultos" id="">
+					<input class="inputStyle" type="number" name="cantNinos" placeholder="cant menores" id="">
+					<br>
+					<label for="Comentarios"> Comentarios:
+						<br>
+						<textarea class="inputStyle" placeholder="carga tus comentarios" cols="40" rows="10"
+							required></textarea>
+					</label> <br>
+					<input class="btn btn-dark btn btn-secondary borderColorButton" type="button" value="Reservar">
 
-						<div>
-							<input type="date" name="fechaDesde">
-						</div>
-						<div>
-							<input type="date" name="fechaHasta">
-						</div>
-						<div>
-							<input type="number" name="cantAdultos" placeholder="Adultos" min="1" value="1">
-						</div>
-						<div>
-							<input type="number" name="cantNinos" placeholder="Niños" min="0" value="0">
-						</div>
-
-						<div>
-							<input class="button" type="button" value="Disponibilidad">
-						</div>
-					</div>
 				</form>
-			</div>
-
-
+			</article>
 		</section>
-	</main>
+	</div>
 
 	<footer id="redes">
 		<br>
 		<div class="divMapaUbicacion">
-			<a href="ubicacion.html"><img src="icon/icons8-google-maps-48.png" alt="maps"></a>
+			<a href="ubicacion.html"><img src="../icon/icons8-google-maps-48.png" alt="maps"></a>
 		</div>
 		<br>
 		<div class="divRedes">
@@ -119,7 +128,7 @@
 			<p class="pDireciion">Tucuman 2035 tel: 5411 2323-2412 Buenos Aires Argentina (CABA)</p>
 		</div>
 	</footer>
-	<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+<script src="./js/bootstrap.bundle.min.js"></script>
 
 </html>
