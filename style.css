@@ -9,10 +9,6 @@ html {
 
 }
 
-h1, .h1 {
-    font-size: calc(1.375rem + 1.5vw);
-  }
-
 body {
     background-color: rgb(33, 37, 41);
     color: rgb(224, 217, 217);
@@ -39,69 +35,6 @@ body {
     background-color: rgb(33, 37, 41);
 
 }
-.table {
-    --bs-table-bg: transparent;
-    --bs-table-accent-bg: transparent;
-    --bs-table-striped-color: #212529;
-    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-    --bs-table-active-color: #212529;
-    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-    --bs-table-hover-color: #212529;
-    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #212529;
-    vertical-align: top;
-    border-color: #dee2e6;
-  }
-
-  table {
-    caption-side: bottom;
-    border-collapse: collapse;
-    border: solid;
-  }
-  table td{
-      border: solid;
-      border-color: #373b3e;
-  }
-  table th{
-    border: solid;
-    border-color: #373b3e;
-}
-
-
-.table-dark {
-    --bs-table-bg: #212529;
-    --bs-table-striped-bg: #2c3034;
-    --bs-table-striped-color: #fff;
-    --bs-table-active-bg: #373b3e;
-    --bs-table-active-color: #fff;
-    --bs-table-hover-bg: #323539;
-    --bs-table-hover-color: #fff;
-    color: #fff;
-    border-color: #373b3e;
-  }
-  .table-striped > tbody > tr:nth-of-type(odd) > * {
-    --bs-table-accent-bg: var(--bs-table-striped-bg);
-    color: var(--bs-table-striped-color);
-  }
-  .table-bordered > :not(caption) > * {
-    border-width: 1px 0;
-  }
-.form-control:focus {
-
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
-    background-color: rgb(33, 37, 41);
-    color: rgb(224, 217, 217);
-}
-
-
-.form-control {
-    border-color: rgb(63, 62, 62);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 51, 51, 0.6);
-
-}
-
 .divIconLogo {
     width: 80%;
     
@@ -158,39 +91,17 @@ body {
     color: white;
 }
 
-.divForm {
+.divIndex {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-
-
-}
-.divForm div{
-    display:flex;
-}
-.divFormReserva{
-    display: grid;
-    grid-template-columns: auto auto;
-
+    grid-template-columns: 80% auto ;
 }
 
-
-.divFormContacto{
-    display: grid;
-    grid-template-columns: auto auto;
-
+.divIndex .divIndexForm{
+    width: 90%;
 }
 
-
-
-label{
-   display: inline-block;
-   width: 200px;
-   
-    
-  }
-
-input{
-    width: 300px;
+.divIndex .divIndexForm >input{
+    width: 100%;
     height: 40px;
     background: linear-gradient(to bottom right, black,darkgray);
     border-color: #00080e;
@@ -199,6 +110,15 @@ input{
    
     margin-top: 20px;
 }
+
+label{
+   display: inline-block;
+   width: 200px;
+   
+    
+  }
+
+
 .button{
     width: 150px;
     height: 40px;
@@ -219,12 +139,21 @@ input{
 .divMapaUbicacion {
     text-align: left;
 }
+.zoom:hover{
+    transform: scale(1.5);
+}
 
 .inputStyle {
-    background-color: transparent;
-    /* rgb(33, 37, 41);*/
-    color: rgb(224, 217, 217);
     margin-top: 20px;
+
+        width: 50%;
+        height: 40px;
+        background: linear-gradient(to bottom right, black,darkgray);
+        border-color: #00080e;
+        
+        color: white;
+       
+      
 
 }
 
@@ -264,7 +193,7 @@ input{
 .frameUbicacion{
     width: 70%;
     
-    height: 300px;
+    height: 400px;
      border:0;
 }
 
@@ -287,16 +216,17 @@ input{
         
         grid-template-columns: auto ;
     }
-    .divForm {
-       
-        grid-template-columns:  auto;
-    
-    
+
+    .divIndex {
+        
+        grid-template-columns: auto auto ;
     }
+
     .divFormReserva{
         grid-template-columns: auto;
     
     } 
+
     .divFormContacto{
        
         grid-template-columns: auto;
@@ -309,10 +239,10 @@ input{
     }
 
     .frameUbicacion{
-        width: 40%;
+        width: 60%;
         
-        height: 200px;
-  
+        height: 300px;
+
     }
     
     

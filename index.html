@@ -6,13 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="./icon/icons8-hospital-2-50.png">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="style.css">
 	<title>Index</title>
 </head>
 
 <body>
 
-	<header>
+	<header class="animate__animated animate__fadeInRightBig">
 		<div>
 			<div class="logoHotel">
 				<a href="#" class="divIconLogo"><img src="./icon/icons8-hospital-2-100.png" alt="hotel"></a>
@@ -71,30 +72,33 @@
 		</nav>
 	</header>
 	<main>
-
 		<br>
 		<br>
 		<section>
 			<div>
 				<form action="#">
-					<div class="divForm ">
-
-
-						<div>
-							<input type="date" name="fechaDesde">
+					<div class="divIndex">						
+						<div class="divIndexForm">
+							<input class="m-3" type="date" name="fechaDesde">
+							<br>
+							<input class="m-3" type="date" name="fechaHasta">
+							<br>
+							<input class="m-3" type="number" name="cantAdultos" placeholder="Adultos" min="1" value="1">
+							<br>
+							<input class="m-3" type="number" name="cantNinos" placeholder="Niños" min="0" value="0">
+							<br>							
+						</div>
+						<div class="animate__animated animate__fadeInDown">
+							<a href="#" class="divIconLogo"><img src="./icon/3850130.png" alt="hotel"></a>
 						</div>
 						<div>
-							<input type="date" name="fechaHasta">
+							
 						</div>
 						<div>
-							<input type="number" name="cantAdultos" placeholder="Adultos" min="1" value="1">
+							
 						</div>
 						<div>
-							<input type="number" name="cantNinos" placeholder="Niños" min="0" value="0">
-						</div>
-
-						<div>
-							<input class="button" type="button" value="Disponibilidad">
+							<input class="btn btn-dark btn-primary zoom m-3" type="button" value="Disponibilidad">
 						</div>
 					</div>
 				</form>

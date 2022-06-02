@@ -70,49 +70,52 @@
 			</div>
 		</nav>
 	</header>
-	<div class="divForm">
+	<main>
+		<div>
 
-		<section>
-			<article>
-				<h2>Resevas</h2>
+			<section>
+				<article>
+					<h3>Resevas</h3>
 
-				<form action="#">
-					<label for="email">Nombre:
-						<input class="inputStyle" type="text" required>
-					</label>
-					<br>
-					<label for="email">Apellido:
-						<input class="inputStyle" type="text" required>
-					</label>
-					<br>
-					<label for="email">Direccion de correo:
-						<input class="inputStyle" type="email" placeholder="xxx@gmail.com" name="email" required>
-					</label>
-					<br>
-					<label for="telefono">Telefono de contacto:
-						<input class="inputStyle" type="number" placeholder="tel. contacto" name="telefono" required>
-					</label>
-					<br>
-					<h3>Periodo</h3>
-					<input class="inputStyle" type="date" name="fechaDesde" id="">
-
-					<input class="inputStyle" type="date" name="fechaHasta" id="">
-					<br>
-					<input class="inputStyle" type="number" name="cantAdultos" placeholder="cant. adultos" id="">
-					<input class="inputStyle" type="number" name="cantNinos" placeholder="cant menores" id="">
-					<br>
-					<label for="Comentarios"> Comentarios:
+					<form action="#">
+						<label for="nombre">Nombre:
+						</label>
+						<input class="inputStyle" type="text" id="nombre" name="nombre" required>
 						<br>
-						<textarea class="inputStyle" placeholder="carga tus comentarios" cols="40" rows="10"
-							required></textarea>
-					</label> <br>
-					<input class="btn btn-dark btn btn-secondary borderColorButton" type="button" value="Reservar">
+						<label for="apellido">Apellido:
+						</label>
+						<input class="inputStyle" type="text" id="apellido" name="apellido" required>
+						<br>
+						<label for="email">Direccion de correo:
+						</label>
+						<input class="inputStyle" type="email" placeholder="xxx@gmail.com" id="email" name="email"
+							required>
+						<br>
+						<label for="telefono">Telefono de contacto:
+						</label>
+						<input class="inputStyle" type="number" placeholder="tel. contacto" id="telefono"
+							name="telefono" required>
+						<br>
+						<br>
+						<h5>Periodo</h5>
+						<input class="inputStyle w-25" type="date" name="fechaDesde" id="">
+						<input class="inputStyle w-25" type="date" name="fechaHasta" id="">
+						<br>
+						<input class="inputStyle w-25" type="number" name="cantAdultos" placeholder="cant. adultos" id="">
+						<input class="inputStyle w-25" type="number" name="cantNinos" placeholder="cant menores" id="">
+						<br>
+						<br>
+							<textarea class=" bg-dark w-50" placeholder="carga tus comentarios" cols="40" rows="10"
+								required></textarea>
+						<br>
+						<br>
+						<input class="btn btn-dark btn btn-secondary borderColorButton zoom" type="button" value="Reservar">
 
-				</form>
-			</article>
-		</section>
-	</div>
-
+					</form>
+				</article>
+			</section>
+		</div>
+	</main>
 	<footer id="redes">
 		<br>
 		<div class="divMapaUbicacion">
