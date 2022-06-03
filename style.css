@@ -4,15 +4,17 @@
 }
 
 html {
-    border: 6px solid #00080e;
+    border: 6px solid black; 
     min-height: 100%;
 
 }
 
 body {
-    background-color: rgb(33, 37, 41);
-    color: rgb(224, 217, 217);
-    background-image: url("img/191010151958-bw-dubai-twins.jpg");
+ 
+    
+    color:lightgray;
+     background-image: url("img/191010151958-bw-dubai-twins.jpg"); 
+    
     /*position: relative;*/
     /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
 
@@ -32,7 +34,7 @@ body {
 
     /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
 
-    background-color: rgb(33, 37, 41);
+  
 
 }
 .divIconLogo {
@@ -88,7 +90,7 @@ body {
 
 .div-nav-container div a{
     text-decoration:none;
-    color: white;
+    color: rgb(196, 20, 20);
 }
 
 .divIndex {
