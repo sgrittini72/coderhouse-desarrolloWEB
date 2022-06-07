@@ -13,7 +13,7 @@ html {
 
 body {
   color: lightgray;
-  background-image: url("/img/191010151958-bw-dubai-twins.jpg");
+  background-image: url("../img/191010151958-bw-dubai-twins.jpg");
   /*position: relative;*/
   /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
   background-position: center center;
