@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="./icon/icons8-hospital-2-50.png">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./scss/style.css">
 	<title>Contacto</title>
 </head>
 
@@ -72,40 +72,37 @@
 	</header>
 	<main>
 		<div>
-
 			<section>
 				<h3>CONTACTO</h3>
-			</section>
-			<br>
+				<br>
+				<form action="#">
+					<label for="nombre">Nombre</label>
 
-			<form action="#">
-					<label for="nombre" >Nombre</label>
-					
 					<input type="text" class="inputStyle w-70" id="nombre" aria-describedby="emailHelp">
 					<br>
-					<label for="apellido" >Apellido</label>
-					
+					<label for="apellido">Apellido</label>
+
 					<input type="text" class="inputStyle w-70" id="apellido">
 					<br>
-					<label for="email" >Email</label>
-					
+					<label for="email">Email</label>
+
 					<input type="email" class="inputStyle w-70" id="exampleInputEmail1" aria-describedby="emailHelp">
 					<br>
-					<label for="telefono" >Tel contacto.</label>
-					
+					<label for="telefono">Tel contacto.</label>
+
 					<input type="number" class="inputStyle w-70" id="telefono">
-					<br>				
+					<br>
 
 					<br>
 
-					<textarea class="form-control bg-dark w-50" placeholder="comentarios aqui" id="comentario"
-						rows="10"></textarea>
+					<textarea class="textAreaStyle" placeholder="comentarios aqui" id="comentario" rows="10"></textarea>
 
 					<br>
 
 					<button type="submit" class="btn btn-dark btn-primary zoom">Submit</button>
 					<button type="reset" class="btn btn-dark btn-primary zoom">Reset</button>
-			</form>
+				</form>
+			</section>
 		</div>
 	</main>
 	<footer id="redes">

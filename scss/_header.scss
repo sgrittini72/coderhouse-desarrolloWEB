@@ -1,0 +1,39 @@
+.divIconLogo {
+    width: 80%;
+    
+    float: left;
+}
+
+.divIconFlags {
+    margin-left: 40;
+    width: 20%;
+    float: rigth;
+}
+
+
+.divLogo {
+    width: 40%;
+   
+}
+
+
+.linea1Logo {
+    text-align: left;
+    font-size: 200%;
+    max-width: 200%;
+    min-width: 10%;
+
+}
+
+.linea2Logo {
+    text-align: left;
+
+}
+.flex-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flex-logo div{
+    margin: 5px;
+}

@@ -6,9 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="./icon/icons8-hospital-2-50.png">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
-	 <!-- <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">  -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<!-- <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">  -->
+	<link rel="stylesheet" href="./scss/style.css">
 	<title>Index</title>
 </head>
 
@@ -78,26 +78,33 @@
 		<section>
 			<div>
 				<form action="#">
-					<div class="divIndex">						
+					<div class="divIndex">
 						<div class="divIndexForm">
-							<input class="m-3" type="date" name="fechaDesde">
+							<label for="fechaDesde">Fecha desde:
+							</label>
+							<input class="m-3" type="date" id="fechaDesde" name="fechaDesde">
 							<br>
-							<input class="m-3" type="date" name="fechaHasta">
+							<label for="fechaHasta">Fecha hasta:
+							</label>
+							<input class="m-3" type="date" id="fechaHasta" name="fechaHasta">
 							<br>
-							<input class="m-3" type="number" name="cantAdultos" placeholder="Adultos" min="1" value="1">
+							<label for="cantAdultos">Cant. adultos:
+							</label>
+							<input class="m-3" type="number" id="cantAdultos" name="cantAdultos" placeholder="Adultos"
+								min="1" value="1">
 							<br>
-							<input class="m-3" type="number" name="cantNinos" placeholder="Niños" min="0" value="0">
-							<br>							
+							<label for="cantNinos">Cant. niños:
+							</label>
+							<input class="m-3" type="number" id="cantNinos" name="cantNinos" placeholder="Niños" min="0"
+								value="0">
+							<br>
 						</div>
 						<div class="animate__animated animate__fadeInDown">
 							<a href="#" class="divIconLogo"><img src="./icon/3850130.png" alt="hotel"></a>
 						</div>
-						<div>
-							
-						</div>
-						<div>
-							
-						</div>
+						<div></div>
+
+
 						<div>
 							<input class="btn btn-dark btn-primary zoom m-3" type="button" value="Disponibilidad">
 						</div>
