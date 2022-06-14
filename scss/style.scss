@@ -1,9 +1,37 @@
 $colorText:white;
 $bgGradiente: linear-gradient(to bottom right, black, darkgray);
 
+$margen-pading-inicial:(
+    margin: 0,
+    padding: 0
+);
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+ }
+ 
+
+
+.my-body-default{
+    color: lightgray;
+    /*position: relative;*/
+    /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+    background-position: center center;
+    /* Para que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+}
+
+
+
 * {
-    Margin: 0;
-    padding: 0;
+    margin: map-get($margen-pading-inicial, margin );
+    padding:  map-get($margen-pading-inicial, padding);
     box-sizing: border-box;
 }
 
@@ -14,29 +42,8 @@ html {
 }
 
 body {
-
-
-    color: lightgray;
+    @extend .my-body-default;
     background-image: url("../img/191010151958-bw-dubai-twins.jpg");
-
-    /*position: relative;*/
-    /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
-
-    background-position: center center;
-
-    /* Para que la imagen de fondo no se repita */
-
-    background-repeat: no-repeat;
-
-    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
-
-    background-attachment: fixed;
-
-    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-
-    background-size: cover;
-
-    /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
 }
 
 @import "header";
@@ -49,14 +56,17 @@ body {
     .divIndexForm {
         width: 80%;
         >label {
-            width: 20%;
-            height: 30px;
-            color: white;
+            // width: 20%;
+            // height: 30px;
+            @include sizes(20%, 30px);
+
+            color: $colorText;
             margin-top: 20px;
         }
         >input {
-            width: 60%;
-            height: 40px;
+            // width: 60%;
+            // height: 40px;
+            @include sizes(60%, 40px);
             background: $bgGradiente;
             border-color: #00080e;
 
@@ -76,17 +86,6 @@ label {
 }
 
 
-.button {
-    width: 150px;
-    height: 40px;
-    background-image: $bgGradiente;
-    border-color: darkgray;
-
-
-}
-
-
-
 .zoom {
 
     &:hover {
@@ -96,9 +95,9 @@ label {
 
 .inputStyle {
     margin-top: 20px;
-    width: 25%;
-    
-    height: 40px;
+    // width: 25%;  
+    // height: 40px;
+    @include sizes(25%, 40px);
     background: $bgGradiente;
     border-color: #00080e;
 
@@ -130,8 +129,9 @@ label {
 }
 
 .iframeYouTube {
-    width: 727px;
-    height: 409px;
+    // width: 727px;
+    // height: 409px;
+    @include sizes(727px, 409px);
 
 }
 
@@ -141,9 +141,9 @@ label {
 }
 
 .frameUbicacion {
-    width: 70%;
-
-    height: 400px;
+    // width: 70%;
+    // height: 400px;
+    @include sizes(70%, 400px);
     border: 0;
 }
 
@@ -192,15 +192,16 @@ label {
     }
 
     .iframeYouTube {
-        width: 200px;
-        height: 109px;
+        // width: 200px;
+        // height: 109px;
+        @include sizes(200px, 109px);
 
     }
 
     .frameUbicacion {
-        width: 60%;
-
-        height: 300px;
+        // width: 60%;
+        // height: 300px;
+        @include sizes(60%, 300px);
 
     }
 
