@@ -10,227 +10,159 @@
   background-attachment: fixed;
   /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
   background-size: cover;
-  /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
-}
+  /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */ }
 
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
   border: 6px solid black;
-  min-height: 100%;
-}
+  min-height: 100%; }
 
 body {
-  background-image: url("../img/191010151958-bw-dubai-twins.jpg");
-}
+  background-image: url("../img/191010151958-bw-dubai-twins.jpg"); }
 
 .divIconLogo {
   width: 80%;
-  float: left;
-}
+  float: left; }
 
 .divIconFlags {
   margin-left: 40;
   width: 20%;
-  float: rigth;
-}
+  float: rigth; }
 
 .divLogo {
-  width: 40%;
-}
+  width: 40%; }
 
 .linea1Logo {
   text-align: left;
   font-size: 200%;
   max-width: 200%;
-  min-width: 10%;
-}
+  min-width: 10%; }
 
 .linea2Logo {
-  text-align: left;
-}
+  text-align: left; }
 
 .flex-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+  flex-direction: row;
+  align-items: center; }
 
 .flex-logo div {
-  margin: 5px;
-}
+  margin: 5px; }
 
 .div-nav-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto auto auto;
-      grid-template-columns: auto auto auto auto auto auto;
-}
+  grid-template-columns: auto auto auto auto auto auto; }
 
 .div-nav-container div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  justify-items: start;
-}
+  justify-items: start; }
 
 .div-nav-container div a {
   text-decoration: none;
-  color: #c41414;
-}
+  color: #c41414; }
 
 .divIndex {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 80% 80% auto;
-      grid-template-columns: 80% 80% auto;
-}
-
-.divIndex .divIndexForm {
-  width: 80%;
-}
-
-.divIndex .divIndexForm > label {
-  width: 20%;
-  height: 30px;
-  color: white;
-  margin-top: 20px;
-}
-
-.divIndex .divIndexForm > input {
-  width: 60%;
-  height: 40px;
-  background: -webkit-gradient(linear, left top, right bottom, from(black), to(darkgray));
-  background: linear-gradient(to bottom right, black, darkgray);
-  border-color: #00080e;
-  color: white;
-  margin-top: 20px;
-}
+  grid-template-columns: 80% 80% auto; }
+  .divIndex .divIndexForm {
+    width: 80%; }
+    .divIndex .divIndexForm > label {
+      width: 20%;
+      height: 30px;
+      color: white;
+      margin-top: 20px; }
+    .divIndex .divIndexForm > input {
+      width: 60%;
+      height: 40px;
+      background: linear-gradient(to bottom right, black, darkgray);
+      border-color: #00080e;
+      color: white;
+      margin-top: 20px; }
 
 label {
   display: inline-block;
-  width: 200px;
-}
+  width: 200px; }
 
 .zoom:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
+  transform: scale(1.5); }
 
 .inputStyle {
   margin-top: 20px;
   width: 25%;
   height: 40px;
-  background: -webkit-gradient(linear, left top, right bottom, from(black), to(darkgray));
   background: linear-gradient(to bottom right, black, darkgray);
   border-color: #00080e;
-  color: white;
-}
+  color: white; }
 
 .textAreaStyle {
-  background: -webkit-gradient(linear, left top, right bottom, from(black), to(darkgray));
   background: linear-gradient(to bottom right, black, darkgray);
   width: 50%;
-  color: white;
-}
+  color: white; }
 
 .borderColorButton {
-  border-color: #4e440d;
-}
+  border-color: #4e440d; }
 
 .pHistoria {
   font-size: large;
   text-align: justify;
-  font-family: 'Roboto', sans-serif;
-}
+  font-family: 'Roboto', sans-serif; }
 
 .colorInmputletra {
-  color: white;
-}
+  color: white; }
 
 .iframeYouTube {
   width: 727px;
-  height: 409px;
-}
+  height: 409px; }
 
 .galeria {
-  width: 50%;
-}
+  width: 50%; }
 
 .frameUbicacion {
   width: 70%;
   height: 400px;
-  border: 0;
-}
+  border: 0; }
 
 .articleHistoria {
   background: radial-gradient(#333030, #1d1414, #3a3636);
-  width: 100%;
-}
+  width: 100%; }
 
 .divRedes {
   /*las imágenes usadas tienen width de 48px*/
   width: 80%;
   margin-bottom: 2em;
-  text-align: right;
-}
+  text-align: right; }
 
 .divMapaUbicacion {
-  text-align: left;
-}
+  text-align: left; }
 
 .pDireciion {
   width: 80%;
   text-align: right;
   font-weight: bold;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 @media all and (max-width: 991px) {
   .logoEmiratos {
-    display: none;
-  }
+    display: none; }
   .linea1Logo {
-    font-size: 120%;
-  }
+    font-size: 120%; }
   .linea2Logo {
-    display: none;
-  }
+    display: none; }
   .div-nav-container {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
+    grid-template-columns: auto; }
   .divIndex {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-  }
+    grid-template-columns: auto auto; }
   .divFormReserva {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
+    grid-template-columns: auto; }
   .divFormContacto {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
+    grid-template-columns: auto; }
   .iframeYouTube {
     width: 200px;
-    height: 109px;
-  }
+    height: 109px; }
   .frameUbicacion {
     width: 60%;
-    height: 300px;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+    height: 300px; } }

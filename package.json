@@ -1,5 +1,28 @@
 {
+  "name": "hotel-grittini",
+  "version": "1.0.0",
+  "description": "Proyecto curso Desarrollo WEB - Coderhouse",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  },
   "dependencies": {
     "animate.css": "^4.1.1"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss scss/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgrittini72/coderhouse-desarrolloWEB.git"
+  },
+  "author": "Sergio L Grittini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgrittini72/coderhouse-desarrolloWEB/issues"
+  },
+  "homepage": "https://sgrittini72.github.io/coderhouse-desarrolloWEB/"
 }
