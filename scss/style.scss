@@ -47,6 +47,37 @@ body {
 
 @import "header";
 @import "nav";
+.divErrorContent {
+    margin-top: 100px;
+    display: grid;
+     grid-template-areas: 
+      "contenido1"
+      "contenido2";
+      grid-column: auto ;
+        > *{
+            border: 1px solid black;
+            padding: 40px;
+            /*Centrar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: .5;
+            background-color: #191919;
+        }
+        .div1 {
+            grid-area: contenido1;
+            font-size: 200px;
+           
+          }
+          .div2 {
+            grid-area: contenido2;
+            font-size: 50px;
+           
+          }
+    }
+    
+    
+
 
 .divIndex {
     display: grid;
@@ -76,6 +107,10 @@ body {
     }
 }
 
+h1{
+    font-size: x-large;
+    display: none;
+}
 
 label {
     display: inline-block;
@@ -204,5 +239,25 @@ label {
 
     }
 
+
+    .divErrorContent {
+        margin-top: 50px;
+        
+            > *{
+                padding: 20px;
+
+            }
+            .div1 {
+
+                font-size: 100px;
+               
+              }
+              .div2 {
+
+                font-size: 25px;
+               
+              }
+        }
+    
 
 }

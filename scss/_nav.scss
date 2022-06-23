@@ -1,15 +1,17 @@
+
 .div-nav-container{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
+    padding: 2fr;
 
 }
 .div-nav-container div{
     display: flex ;
 
-    justify-items: start;
+    justify-items:start;
 }
 
 .div-nav-container div a{
     text-decoration:none;
-    color: rgb(196, 20, 20);
+
 }
